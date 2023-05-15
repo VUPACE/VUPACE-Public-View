@@ -1,0 +1,384 @@
+/*
+    Note that this file is not actually being referenced in the public site.  To include this file, upload it as the CSS file at SV > Marketing > Public View > Configuration.
+
+/* START OF THEME */
+
+/*
+  A customized version of the Bootswatch Spacelab theme (http://bootswatch.com).
+/*!
+@import url("/restricted/3rdPartyTools/deployed/bootstrap/themes/bootswatch.spacelab.custom.css");*/
+
+/*!
+  You can change the theme to a non-customized version by replacing the above import statement
+  with the following statement.
+
+@import url("/restricted/3rdPartyTools/deployed/bootstrap/themes/bootswatch.spacelab.min.css");
+*/
+
+/* END OF THEME */
+
+
+/* --------------------------------------------------------------------------------------------------------------------------  */
+
+/* Get Started Styles.  These styles are intended for helping users to get started for branding their public sites.
+   Users may want to override one or more of the following css styles. */
+
+/* Main page background */
+#pageContainer {
+  /* background-color: <Insert Color Code>; */
+}
+
+/* Header 1 */
+.navbar-dark {
+  /* background-image: none; */
+  /* background-color: <Insert Color Code>; */
+}
+
+/* Header 3 global navigation menu */
+.navbar-default {
+  /* background-image: none; */
+  /* background-color: <Insert Color Code>; */
+}
+
+/* Header 3 global navigation menu label */
+.navbar-default .navbar-nav > li > a  {
+  /* color: <Insert Color Code>; */
+}
+
+/* Header 3 global navigation drop down menu */
+.navbar-nav>li>.dropdown-menu {
+  /* background-color: <Insert Color Code>; */
+}
+
+/* Header 3 global navigation drop down menu label */
+.dropdown-menu > li > a, .dropdown-menu .subMenu > li > a {
+    /* color: <Insert Color Code>; */
+}
+
+/* Footer 1 */
+#footer1Wrapper .container {
+  /* background-color: <Insert Color Code>; */
+}
+
+/* Footer 2 */
+#footer2Wrapper .container {
+  /* background-color: <Insert Color Code>; */
+}
+
+/* Section Header */
+.sectionHeader {
+  /* background-image: none; */
+  /* background-color: <Insert Color Code>; */
+  /* border-color: <Insert Color Code>; */
+}
+
+/* Secondary Section Header */
+.sectionHeaderSecondary {
+  /* background-image: none; */
+  /* background-color: <Insert Color Code>; */
+  /* border-color: <Insert Color Code>; */
+}
+
+
+/* ------------------------VU Customizations---------------------------*/
+
+
+
+/* ------------------------Header---------------------------*/
+
+
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus, .dropdown-menu .subMenu > .active > a, .dropdown-menu .subMenu > .active > a:hover, .dropdown-menu .subMenu > .active > a:focus {
+    color:black;
+    text-decoration: none;
+    outline: 0;
+    background-color: transparent;
+}
+
+
+/* Creates Home Page Banner*/
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/srs/upload/VUBackground.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+
+
+/* ------------------------Home Page---------------------------*/
+/* Making Login text white */
+
+.dropdown-item{
+    color: black !important;
+}
+
+/* spaces logo with cart & login */
+#schoolHeaderLogoWrapper {
+margin-right: 145px}
+
+/* Centers Cart in page */
+#cartInfo {
+    text-align: right;
+}
+
+/*removes weird line above cart*/
+#header0.row {
+    background-color: white;}
+
+/*updates cart&login bar*/
+.bg-dark {
+    background-color: white; !important;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+/*Padding before footer*/
+#mainContentWrapper {
+    padding-bottom: 50px;
+}
+
+/* Navigation Bar Color */
+#header3Wrapper {
+    background-color: #DDDDDD;
+}
+.bg-light {
+    background-color: #DDDDDD !important;
+}
+
+/* Navigation Bar Link Blocks */
+.mainNavBar .nav>li>a {
+    min-width: 10em;
+    text-align: center;
+}
+
+/* Navigation Bar Text */
+.navbar-light .navbar-nav .nav-link {
+    color: white
+    font-weight: bold;
+}
+
+
+/* line height for cart and login */
+
+#cartInfo {
+    margin-top: 6px;
+}
+
+#loginInfo {
+    margin-top: 6px;
+}
+
+#loginInfo .headerStudentLoginLogoutLink,
+.headerStudentLoginContainer .headerStudentLoginDropdownLink {
+    color: white;
+    }
+
+
+
+/* ------------------------Pages---------------------------*/
+
+/* Space between nav bar and content */
+#mainContent {
+    padding-top: 30px;
+    text-align: left;
+}
+
+/* Page Header Font Size*/
+.h1, h1 {
+    font-size: 2rem;
+}
+.h2, h2 {
+    font-size: 1.5rem;
+}
+
+a {
+    color:#006682
+}
+
+
+/* Buttons */
+
+.btn-primary, .btn-default {
+  background-color:#DDDDDD;
+  border: none  ;
+  color: #000000;
+}
+
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary, 
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-deefault.active, .open .dropdown-toggle.btn-default {
+  background-color: #006682;
+  border: none;
+  color: #FFFFFF;
+}
+
+/* Removes borders around headers in login page */
+#existingStudentDiv .card, #newStudentDiv .card {
+
+     border: none;
+     margin-bottom: 0px;
+}   
+
+#existingStudentDiv .sectionHeader h2 {
+    margin-left: -15px;}
+
+/* Spacing between course search breadcrumbs */
+#secondaryNavigation {
+     padding-bottom: 10px
+}
+
+/* spacing between program cards under Programs page */
+.panel-group .card {
+    margin-bottom: 0.5rem;
+}
+
+
+/* changes color for page numbers at bottom */
+.page-item.active .page-link {
+    z-index: 1;
+    color: #fff;
+    background-color: #006682;
+    Border-color: #006682;
+}
+
+.page-link {
+    color: #006682
+}
+
+/* ------------------------Student Portal---------------------------*/
+
+/* Colors for main menu on Left */
+.portalMenu .active > a, .sidebarScrollSpy .active > a {
+    border-left: 5px solid #006682;
+    background-color: #eeeeee;
+}
+
+/* Colors for main menu on Left */
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    border-left: 5px solid #006682;
+    background-color: #eeeeee;
+    Color: #006682;
+}
+
+
+/* Spacing between menu and sub-menu */
+.portalMenu .nav-link {
+    margin-top: 3px
+}
+
+/* Icon colors in student profile */
+.glyphicon.glyphicon-info-sign, .glyphicon.glyphicon-question-sign, #skip-to-main-container a {
+    color: #333333
+}
+
+/* spacing between name and x number */
+.portalHeaderRow1 {margin-bottom: 0.2rem}
+
+/* ------------------------Alerts---------------------------*/
+
+.alert-danger {
+   background-color: #EBD8D1;
+   color: #993D1B;
+   border: none;
+}
+
+.alert-info {
+   background-color: #CCE0E6;
+   color: #006682;
+   border: none;
+}
+
+.alert-warning {
+    color: #856404;
+    background-color: #F7EEDB;
+    Border:none;
+}
+
+/* ------------------------Hide Items---------------------------*/
+
+
+/* Hides "News & Media", "Announcements", and "Highlights" from the home page */
+#contentModule5 {
+    display:none;
+}
+
+/* hides banner in course page */
+#sectionEnrollmentHeader {
+    display: none;
+}
+
+
+/* hides multi program search */
+#multiProgramContainer {
+    display: none;
+}
+
+/* hides multi program search */
+#multiProgramSearchFilter {
+    display: none;
+}
+
+/* hides course text block */
+#variableContentBlockPG0033 {
+    display: none;
+}
+
+.instructorProfileUsernamePasswordPanel .btn-secondary {display: none;}
+{
+  display: none; /* Hides the Username/Password section in the instructor view. Using SSO, so this is not needed */
+}
+#parentInfoQuestion1Container, #parentInfoQuestion2Container  {
+  display: none; /* Hides the questions about family being an alumni or employee of Vanderbilt*/
+}
+#interestAreaPanel {
+  display: none; /* Hides interest areas in student profile*/   
+}
+#studentInfoSalutation, #studentInfoNameToAppearInPrint {
+  display: none; /* Hides salutation & name to appear in print on student profile*/
+}
+
+div.sectionContactHours {
+  display: none; /* Hides Contact Hours on section profile */
+}
+#formCourseSearchDetails .alert-warning {
+  display: none; /* Hides request for more information section from course/section page*/
+}
+[for="onlyFollowingMethods"] {
+  display: none; /* Hides contact me by following methods option in PV*/
+}
+[for="contactMethod1"] {
+  display: none; /* Hides contact method option*/
+}
+[for="contactMethod2"] {
+  display: none; /* Hides contact method option 2*/
+}
+
+
+/* ------------------------Footer---------------------------*/
+
+/*Footer Background*/
+#footer2Wrapper {
+    background-color: #DDDDDD;
+    padding-bottom: 10px
+}
+
+/*Copyright Text*/
+#footer2Sub2 {
+    text-align: center;
+    font-size: 10px;
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 10px
+}
